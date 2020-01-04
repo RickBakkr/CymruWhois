@@ -28,7 +28,8 @@ class WHOIS {
 
     private static function parse($input) {
         $results = [];
-        if((strpos(strtolower($input), 'AS') === FALSE)) {
+        // If 'AS' is not in our output, we can expect the output to not be valid.
+        if(strpos($input, 'AS') !== false) {
             $rows = explode("\n", $input);
             // Remove first row, as that is just to form the table in the real response.
             array_shift($rows);
