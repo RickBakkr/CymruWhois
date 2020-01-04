@@ -1,0 +1,15 @@
+{
+  "name": "rbakker/cymruwhois",
+  "description": "A PHP implementation which queries the Cymru WHOIS server and parses the output to Objects",
+  "authors": [
+    {
+      "name": "Rick Bakker",
+      "email": "rickbakkr@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "RickBakker\\Cymruwhois\\": "src/"
+    }
+  }
+}
